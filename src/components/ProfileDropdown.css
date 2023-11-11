@@ -1,0 +1,148 @@
+.profile-dropdown {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.profile-dropdown .div {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 16px 36px #00000030;
+  height: 186px;
+  overflow-x: hidden;
+  position: relative;
+  width: 165px;
+}
+
+.profile-dropdown .text-wrapper {
+  color: #797979;
+  font-family: 'Roboto-Regular', Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  left: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 34px;
+  white-space: nowrap;
+}
+
+.profile-dropdown .text-wrapper-2 {
+  color: #313131;
+  font-family: 'Roboto-SemiBold', Helvetica;
+  font-size: 12px;
+  font-weight: 600;
+  left: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 15px;
+  white-space: nowrap;
+}
+
+.profile-dropdown .line {
+  height: 1px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 62px;
+  width: 165px;
+}
+
+.profile-dropdown .frame {
+  height: 17px;
+  left: 14px;
+  position: absolute;
+  top: 78px;
+  width: 114px;
+}
+
+.profile-dropdown .text-wrapper-3 {
+  color: #313131;
+  font-family: 'Roboto-Regular', Helvetica;
+  font-size: 13px;
+  font-weight: 400;
+  left: 28px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: -1px;
+  white-space: nowrap;
+}
+
+.profile-dropdown .seetings-icon {
+  height: 16px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 16px;
+}
+
+.profile-dropdown .frame-2 {
+  height: 16px;
+  left: 14px;
+  position: absolute;
+  top: 109px;
+  width: 69px;
+}
+
+.profile-dropdown .vector {
+  height: 20px;
+  left: 0;
+  position: absolute;
+  top: -2px;
+  width: 16px;
+}
+
+.profile-dropdown .text-wrapper-4 {
+  color: #313131;
+  font-family: 'Roboto-Regular', Helvetica;
+  font-size: 13px;
+  font-weight: 400;
+  left: 29px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: -1px;
+  white-space: nowrap;
+}
+
+.profile-dropdown .img {
+  height: 1px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 141px;
+  width: 165px;
+}
+
+.profile-dropdown .frame-3 {
+  height: 20px;
+  left: 14px;
+  position: absolute;
+  top: 154px;
+  width: 72px;
+}
+
+.profile-dropdown .text-wrapper-5 {
+  color: #313131;
+  font-family: 'Roboto-Regular', Helvetica;
+  font-size: 13px;
+  font-weight: 400;
+  left: 28px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1px;
+  white-space: nowrap;
+}
+
+.profile-dropdown .logout-icon {
+  height: 20px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 16px;
+}
