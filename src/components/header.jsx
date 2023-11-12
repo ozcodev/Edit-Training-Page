@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { ProfileDropdown, LangDropdown } from './Dropdowns';
 
 const Header = () => {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
   const [isLangVisible, setLangVisible] = useState(false);
+  const dropdownRef = useRef(null);
 
   const toggleDropdown = () => {
     setDropdownVisible(!isDropdownVisible);
@@ -14,6 +15,21 @@ const Header = () => {
     setLangVisible(!isLangVisible);
     console.log('clicked');
   };
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setDropdownVisible(false);
+      setLangVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
 
   return (
     <header className="bg-white-A700 flex flex-col items-center justify-center md:px-5 shadow-bs w-full">
@@ -71,7 +87,10 @@ const Header = () => {
           </li>
         </ul>
 
-        <div className="flex flex-row gap-[27px] items-center justify-between md:ml-[0] ml-[99px] w-[18%] md:w-full">
+        <div
+          className="flex flex-row gap-[27px] items-center justify-between md:ml-[0] ml-[99px] w-[18%] md:w-full"
+          ref={dropdownRef}
+        >
           <img
             className="h-[18px]"
             src="images/img_notification.svg"
@@ -88,7 +107,10 @@ const Header = () => {
               <LangDropdown />
             </div>
           )}
-          <div className="flex flex-row gap-1.5 items-center justify-between w-[96%] md:w-full">
+          <div
+            className="flex flex-row gap-1.5 items-center justify-between w-[96%] md:w-full"
+            ref={dropdownRef}
+          >
             <div className="flex flex-row gap-1.5 items-center justify-start">
               <img
                 className="h-8 md:h-auto rounded-[50%] w-8 cursor-pointer"
